@@ -1,0 +1,200 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/_main.scss */
+body {
+  background-color: #F5F0EC;
+  font-family: "Helvetica";
+  text-align: center;
+}
+
+/* line 15, ../sass/_main.scss */
+.label {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+/* line 19, ../sass/_main.scss */
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* line 23, ../sass/_main.scss */
+.plaerCircle {
+  cursor: pointer;
+}
+
+/* line 26, ../sass/_main.scss */
+.firstPlayerCircle {
+  cursor: pointer;
+}
+/* line 29, ../sass/_main.scss */
+.firstPlayerCircle circle {
+  fill: #F5F0EC;
+  stroke: #fc3c56;
+}
+/* line 33, ../sass/_main.scss */
+.firstPlayerCircle text {
+  fill: #fc3c56;
+}
+/* line 38, ../sass/_main.scss */
+.firstPlayerCircle.selected circle {
+  fill: #fc3c56;
+  stroke: #fc3c56;
+}
+/* line 42, ../sass/_main.scss */
+.firstPlayerCircle.selected text {
+  fill: #F5F0EC;
+}
+
+/* line 47, ../sass/_main.scss */
+.secondPlayerCircle {
+  cursor: pointer;
+}
+/* line 50, ../sass/_main.scss */
+.secondPlayerCircle circle {
+  fill: #F5F0EC;
+  stroke: #504ea2;
+}
+/* line 54, ../sass/_main.scss */
+.secondPlayerCircle text {
+  fill: #504ea2;
+}
+/* line 59, ../sass/_main.scss */
+.secondPlayerCircle.selected circle {
+  fill: #504ea2;
+  stroke: #504ea2;
+}
+/* line 63, ../sass/_main.scss */
+.secondPlayerCircle.selected text {
+  fill: #F5F0EC;
+}
+
+/* line 69, ../sass/_main.scss */
+.axis, .yAxis {
+  color: #B3A091;
+}
+/* line 72, ../sass/_main.scss */
+.axis line, .yAxis line {
+  opacity: .2;
+  stroke-width: 1px;
+  stroke: #B3A091;
+}
+/* line 77, ../sass/_main.scss */
+.axis .domain, .yAxis .domain {
+  stroke-width: 3px;
+  stroke: #B3A091;
+}
+/* line 81, ../sass/_main.scss */
+.axis text, .yAxis text {
+  color: #B3A091;
+}
+
+/* line 86, ../sass/_main.scss */
+.firstPlayerWinLine rect {
+  fill: rgba(252, 60, 86, 0.3);
+}
+
+/* line 89, ../sass/_main.scss */
+.secondPlayerWinLine rect {
+  fill: rgba(80, 78, 162, 0.3);
+}
+
+/* line 92, ../sass/_main.scss */
+.monthCircle circle {
+  fill: #fc3c56;
+}
+
+/* line 95, ../sass/_main.scss */
+.line {
+  fill: none;
+  stroke: #fc3c56;
+  stroke-width: 5px;
+}
+
+/* line 100, ../sass/_main.scss */
+#viz {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+
+/* line 105, ../sass/_main.scss */
+.monthGraph {
+  border-right: 1px solid #B3A091;
+  border-top: 1px solid #B3A091;
+}
+
+/* line 110, ../sass/_main.scss */
+.firstPlayerWinRateText, .secondPlayerWinLine {
+  fill: #fff;
+  font-weight: 700;
+}

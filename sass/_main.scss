@@ -1,0 +1,113 @@
+$red: rgb(252,60,86);
+$redLight: rgba(252,60,86, .3);
+$blue: rgb(80, 78, 162);
+$blueLight: rgba(80, 78, 162, .3);
+
+$lightGray: #F5F0EC;
+$darkGray: #B3A091;
+
+
+body { 
+	background-color: $lightGray;
+	font-family: "Helvetica";
+	text-align: center;
+}
+.label {
+	display: block;
+	@include margin(50px null 15px null);
+}
+h1 {
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+.plaerCircle{
+	cursor: pointer;
+}
+.firstPlayerCircle {
+	cursor: pointer;
+	
+	circle {
+		fill: $lightGray;
+		stroke: $red;
+	}
+	text{
+		fill: $red;
+	}
+	&.selected {
+
+		circle {
+			fill: $red;
+			stroke: $red;
+		}
+		text{
+			fill: $lightGray;
+		}
+	}
+}
+.secondPlayerCircle {
+	cursor: pointer;
+	
+	circle {
+		fill: $lightGray;
+		stroke: $blue;
+	}
+	text{
+		fill: $blue;
+	}
+	&.selected {
+
+		circle {
+			fill: $blue;
+			stroke: $blue;
+		}
+		text{
+			fill: $lightGray;
+		}
+	}
+}
+
+.axis, .yAxis {
+	color:$darkGray;
+
+	line {
+		opacity:.2;
+		stroke-width:1px;
+		stroke:$darkGray;
+	}
+	.domain {
+		stroke-width:3px;
+		stroke:$darkGray;
+	}
+	text {
+		color:$darkGray;
+	}		
+}
+
+.firstPlayerWinLine rect{
+	fill:$redLight;
+}
+.secondPlayerWinLine rect{
+	fill:$blueLight;
+}
+.monthCircle circle{
+	fill:$red;
+}
+.line{
+	fill:none;
+	stroke: $red;
+	stroke-width:5px;
+}
+#viz{
+	left:50%;
+	position:absolute;
+	transform:translate(-50%, 0)
+}
+.monthGraph{
+	border-right: 1px solid $darkGray;
+	border-top: 1px solid $darkGray;
+}
+
+.firstPlayerWinRateText, .secondPlayerWinLine{
+	fill: #fff;
+	font-weight: 700;
+}
